@@ -180,9 +180,10 @@ export default function Navbar() {
                           <Image
                             src={item.image}
                             alt=""
-                            width={120}
-                            height={80}
+                            width={400}
+                            height={240}
                             className={styles.linkImageImg}
+                            sizes="200px"
                           />
                         ) : null}
                       </span>

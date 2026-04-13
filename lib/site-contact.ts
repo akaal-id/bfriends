@@ -1,5 +1,5 @@
 export const BOOK_NOW_URL =
-  "https://bfriends.zenoti.com/webstoreNew/services";
+  "https://wa.me/6281128742021";
 
 export const CONTACT_PHONE_DISPLAY = "+62 811-2874-2021";
 

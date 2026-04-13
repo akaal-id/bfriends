@@ -6,6 +6,7 @@ import { useRef } from "react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import type { ProgramData } from "@/lib/programs-data";
 import { programsData } from "@/lib/programs-data";
+import { BOOK_NOW_URL } from "@/lib/site-contact";
 import { ArrowRight, ArrowUpRight, ChevronLeft } from "lucide-react";
 import Button from "@/components/ui/Button/Button";
 import styles from "./ProgramContent.module.css";
@@ -253,7 +254,9 @@ function ProgramCta({ program }: { program: ProgramData }) {
           Ready to experience {program.name}?
         </h2>
         <Button
-          href="/book"
+          href={BOOK_NOW_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           color="var(--color-blue-100)"
           showIcon
         >

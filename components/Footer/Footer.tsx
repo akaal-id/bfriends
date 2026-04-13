@@ -2,12 +2,20 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Check, Instagram, Facebook, Linkedin } from "lucide-react";
+import {
+  Check,
+  Instagram,
+  Facebook,
+  Linkedin,
+  Mail,
+  Phone,
+} from "lucide-react";
 import Image from "next/image";
 import styles from "./Footer.module.css";
 import locationStyles from "./Location.module.css";
 import subscribeStyles from "./Subscribe.module.css";
 import { programsData } from "@/lib/programs-data";
+import { CONTACT_PHONE_DISPLAY, CONTACT_PHONE_HREF } from "@/lib/site-contact";
 
 import Button from "@/components/ui/Button/Button";
 
@@ -196,8 +204,6 @@ function SubscriptionSection() {
   );
 }
 
-import { Mail, Instagram as InstagramIcon } from "lucide-react";
-
 // Footer Section Component
 function FooterSection() {
   return (
@@ -223,8 +229,15 @@ function FooterSection() {
                 rel="noopener noreferrer" 
                 className={styles.footerContactItem}
               >
-                <InstagramIcon size={16} />
+                <Instagram size={16} />
                 <span>Instagram: bfriends.bali</span>
+              </a>
+              <a
+                href={CONTACT_PHONE_HREF}
+                className={styles.footerContactItem}
+              >
+                <Phone size={16} />
+                <span>Phone: {CONTACT_PHONE_DISPLAY}</span>
               </a>
               <a 
                 href="mailto:hello@bfriends.id" 

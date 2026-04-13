@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { navColumns } from "@/lib/nav-config";
+import { BOOK_NOW_URL } from "@/lib/site-contact";
 import styles from "./Navbar.module.css";
 
 export type ActiveMenuId = "about" | "programs" | "membership" | "community" | null;
@@ -141,7 +142,9 @@ export default function Navbar() {
 
               <div className={styles.right}>
                 <Link
-                  href="/book"
+                  href={BOOK_NOW_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={styles.bookNowLink}
                   aria-label="Book now"
                 >
@@ -239,7 +242,9 @@ export default function Navbar() {
           </nav>
           <div className={styles.mobileMenuButtons}>
             <Link
-              href="/book"
+              href={BOOK_NOW_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.mobileBookNowLink}
               onClick={closeMenu}
               aria-label="Book now"

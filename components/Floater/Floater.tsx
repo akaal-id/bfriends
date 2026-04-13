@@ -3,11 +3,12 @@
 import React from "react";
 import Link from "next/link";
 import {
-  Mail,
+  Phone,
   CircleHelp,
   Volume2,
   VolumeX,
 } from "lucide-react";
+import { CONTACT_PHONE_HREF } from "@/lib/site-contact";
 import { useSound } from "@/contexts/SoundContext";
 import styles from "./Floater.module.css";
 
@@ -24,13 +25,13 @@ export default function Floater() {
 
   return (
     <div className={styles.floater} aria-label="Quick actions">
-      <Link
-        href="/contact"
+      <a
+        href={CONTACT_PHONE_HREF}
         className={styles.button}
-        aria-label="Contact us"
+        aria-label="Call us"
       >
-        <Mail size={22} strokeWidth={1.5} />
-      </Link>
+        <Phone size={22} strokeWidth={1.5} />
+      </a>
       <Link
         href="/faq"
         className={styles.button}

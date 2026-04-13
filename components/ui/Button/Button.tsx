@@ -6,6 +6,8 @@ import styles from "./Button.module.css";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   href?: string;
+  target?: React.HTMLAttributeAnchorTarget;
+  rel?: string;
   /** Text/icon color (e.g. var(--color-blue-100)) */
   color?: string;
   /** Show arrow icon after text. Default false */
@@ -15,7 +17,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonProps>(
-  ({ href, color, showIcon = false, fullWidth, children, className, disabled, style, ...props }, ref) => {
+  ({ href, target, rel, color, showIcon = false, fullWidth, children, className, disabled, style, ...props }, ref) => {
     const isLink = Boolean(href);
     const wrapperStyle = { ...style } as React.CSSProperties & Record<string, string>;
     if (color) wrapperStyle["--button-color"] = color;
@@ -37,6 +39,8 @@ const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPro
           href={href!}
           className={wrapperClasses}
           style={wrapperStyle}
+          target={target}
+          rel={rel}
           {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
         >
           {content}

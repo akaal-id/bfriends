@@ -8,7 +8,6 @@ import styles from "./Hero.module.css";
 export default function Hero() {
   const [blurAmount, setBlurAmount] = useState(0);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const HERO_VIDEO_DURATION_SECONDS = 36;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,21 +23,6 @@ export default function Hero() {
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    const handleTimeUpdate = () => {
-      if (video.currentTime >= HERO_VIDEO_DURATION_SECONDS) {
-        video.currentTime = 0;
-        video.play().catch(() => undefined);
-      }
-    };
-
-    video.addEventListener("timeupdate", handleTimeUpdate);
-    return () => video.removeEventListener("timeupdate", handleTimeUpdate);
   }, []);
 
   return (
@@ -58,7 +42,7 @@ export default function Hero() {
         }}
         aria-hidden
       >
-        <source src="/videos/Bfriends1.mp4" type="video/mp4" />
+        <source src="/videos/Bfriends2.mp4" type="video/mp4" />
       </video>
       <div className={styles.overlay} aria-hidden />
       <div className={styles.content}>

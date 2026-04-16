@@ -58,7 +58,7 @@ export default function Hero() {
         }}
         aria-hidden
       >
-        <source src="/videos/N - Yoga.mp4" type="video/mp4" />
+        <source src="/videos/BFriends.mp4" type="video/mp4" />
       </video>
       <div className={styles.overlay} aria-hidden />
       <div className={styles.content}>
@@ -67,7 +67,7 @@ export default function Hero() {
           <Button
             className={styles.button}
             color="var(--color-white-100)"
-            href="#learn-more"
+            href="/about/philosophy"
             showIcon
           >
             Learn More
@@ -75,7 +75,7 @@ export default function Hero() {
           <Button
             className={styles.button}
             color="var(--color-white-100)"
-            href="#reserve"
+            href="https://wa.me/6281128742021"
             showIcon
           >
             Reserve Schedule

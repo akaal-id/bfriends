@@ -42,7 +42,7 @@ export default function Hero() {
         }}
         aria-hidden
       >
-        <source src="/videos/Bfriends2.mp4" type="video/mp4" />
+        <source src="/videos/BFriends2.mp4" type="video/mp4" />
       </video>
       <div className={styles.overlay} aria-hidden />
       <div className={styles.content}>

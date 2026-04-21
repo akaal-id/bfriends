@@ -35,21 +35,6 @@ This immersive workshop combines yoga, meditation, and nutritional guidance to h
 Whether you're new to wellness or looking to deepen your practice, this workshop offers something for everyone. You'll leave feeling refreshed, grounded, and ready to embrace the months ahead.`,
   },
   {
-    id: "2",
-    slug: "community-open-house",
-    index: 2,
-    name: "Community Open House",
-    ecosystem: "BFriends",
-    date: "Feb 28, 2025",
-    time: "02:00 PM",
-    image: "/images/Integrate/DDK09222.jpg",
-    text: `Experience BFriends—tour the space, meet the team, and enjoy complimentary sessions.
-
-Discover our facilities including yoga studios, meditation gardens, and treatment rooms. Our team will be on hand to answer questions about memberships, classes, and integrated wellness programs.
-
-This is the perfect opportunity to see what makes BFriends unique and to connect with others in the community. Light refreshments will be served.`,
-  },
-  {
     id: "3",
     slug: "mindful-leadership-retreat",
     index: 3,

@@ -11,7 +11,7 @@ const DEFAULT_BODY =
   "Your body doesn’t always need more effort; sometimes it needs the right kind of care. At the center of Kerobokan, Bali, BFriends will help you start where you are and guide you toward what you need.";
 
 // Authentic photo assets aligned to the section meaning (movement + restoration)
-const INTRO_IMAGE = "/images/intro.jpg";
+const INTRO_IMAGE = "/images/Integrate/DDK09278.jpg";
 
 export interface IntroProps {
   headline?: string;

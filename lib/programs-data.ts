@@ -339,7 +339,7 @@ export const programsData: ProgramData[] = [
     eyebrow: "E · Enhance",
     title: "Science led K-Beauty spa care",
     subheading: "3rd Floor | Supporting skin health with clarity and trust",
-    image: "/images/Enhance/DDK00621.jpg",
+    image: "/images/Integrate/DDK09278.jpg",
     buttonLabel: "Discover Enhance",
     quote:
       "Confidence begins when your outer radiance mirrors your inner vitality.",
